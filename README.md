@@ -86,6 +86,17 @@ Scheda: **ESP32** (Dev Module). Pin verificati sullo sketch (`GPS_RX_PIN 16`, `G
 - TX del GPS va su RX dell'ESP32 (GPIO16) e viceversa.
 - Il GPS ha bisogno di cielo libero per il primo fix (anche alcuni minuti a freddo).
 
+### Alimentazione
+
+| Uso | Come alimentare |
+|---|---|
+| Banco / casa | USB dell'ESP32 a 5 V |
+| Auto | adattatore USB da presa accendisigari (12 V → 5 V, almeno 1 A) collegato alla USB dell'ESP32 |
+
+- GPS, display e LED prendono 5 V e GND dai pin **5V/VIN** e **GND** dell'ESP32: l'assorbimento totale resta sotto i 200 mA.
+- Il modulo GY-NEO6MV2 ha un regolatore a 3,3 V a bordo: va alimentato a 5 V e le linee TX/RX lavorano già a 3,3 V, compatibili con l'ESP32.
+- Monta il GPS con l'antenna rivolta verso il cielo (sotto il parabrezza va bene).
+
 ## Contenuto del repository
 
 | Percorso | Descrizione |
