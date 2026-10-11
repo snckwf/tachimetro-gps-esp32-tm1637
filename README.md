@@ -52,6 +52,40 @@ Per compilare il progetto sono necessarie queste librerie:
 - **TM1637Display**
 - **ArduinoJson**
 
+## Collegamenti elettrici
+
+Scheda: **ESP32** (Dev Module). Pin verificati sullo sketch (`GPS_RX_PIN 16`, `GPS_TX_PIN 17`, `TM1637_CLK_PIN 18`, `TM1637_DIO_PIN 19`, `RGB_R/G/B_PIN 25/26/27`).
+
+### Modulo GPS GY-NEO6MV2
+
+| GPS | ESP32 |
+|---|---|
+| VCC | 5V |
+| GND | GND |
+| TX | GPIO16 (RX2) |
+| RX | GPIO17 (TX2) |
+
+### Display TM1637 4 cifre
+
+| TM1637 | ESP32 |
+|---|---|
+| VCC | 5V |
+| GND | GND |
+| CLK | GPIO18 |
+| DIO | GPIO19 |
+
+### LED RGB a catodo comune
+
+| LED RGB | ESP32 |
+|---|---|
+| catodo comune | GND |
+| anodo rosso | resistenza 220–330 Ω → GPIO25 |
+| anodo verde | resistenza 220–330 Ω → GPIO26 |
+| anodo blu | resistenza 220–330 Ω → GPIO27 |
+
+- TX del GPS va su RX dell'ESP32 (GPIO16) e viceversa.
+- Il GPS ha bisogno di cielo libero per il primo fix (anche alcuni minuti a freddo).
+
 ## Contenuto del repository
 
 | Percorso | Descrizione |
