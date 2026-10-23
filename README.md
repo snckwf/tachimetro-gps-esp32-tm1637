@@ -5,7 +5,7 @@
 >
 > Altri progetti di elettronica, Arduino, ESP32, Home Assistant e stampa 3D su **[www.emgi.it](https://www.emgi.it)**
 
-![Tachimetro GPS ESP32 con TM1637, LED RGB e luminosità automatica giorno/notte](immagini/cover-2026-tachimetro-gps-di-precisione.png)
+![Tachimetro GPS ESP32 con TM1637, LED RGB e luminosità automatica giorno/notte](immagini/copertina-3d.jpg)
 
 Realizzare un tachimetro GPS fai da te è un progetto molto interessante perché unisce elettronica, programmazione, interfaccia web e stampa 3D in un unico dispositivo compatto. In questa versione finale ho realizzato un **tachimetro GPS basato su ESP32** capace di visualizzare la velocità in tempo reale su un display **TM1637 a 4 cifre**, salvare uno **storico persistente in flash**, mostrare una **pagina web professionale via Access Point Wi-Fi**, pilotare un **LED RGB a gradiente** che cambia colore in base alla velocità e regolare automaticamente la **luminosità giorno/notte** in base ad alba e tramonto calcolati localmente tramite GPS.
 
